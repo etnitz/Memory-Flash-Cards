@@ -1,5 +1,5 @@
 # Snake
-### By: Ethan Nitz
+### By: Group1 - Ethan Nitz
 [GitHub](https://github.com/etnitz) [LinkedIn](https://www.linkedin.com/in/ethan-nitz-5822a112/)
 ***
 ### ***Description***

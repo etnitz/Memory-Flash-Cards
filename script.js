@@ -81,7 +81,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function checkForMatch() {
-        let cards = document.querySelectorAll('')
+        let cards = document.querySelectorAll('img')
+        const optionOneId = cardsChosenId[0]
+        const optionTwoId = cardsChosen[1]
+        if (cardsChosen[0] === cardsChosen[1]) {
+            alert('You found a match!')
+            cards[optionOneId].setAttribute('src', 'images/white.jpeg')
+            cards[optionTwoId].setAttribute('src', 'images/white.jpeg')
+            cardsWon.push(cardsChosen)
+        } else {
+            cards[optionOneId].setAttribute('src', 'images/back.jpeg')
+            cards[optionTwoId].setAttribute('src', 'images/back.jpeg')
+            alert('Sorry, try again')
+        }
+        cardsChosen = []
+        cardsChosenId = []
+        resultDisplay
     }
 
     function flipCard() {

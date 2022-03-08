@@ -80,6 +80,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    function checkForMatch() {
+        let cards = document.querySelectorAll('')
+    }
+
     function flipCard() {
         let cardId = this.getAttribute('data-id')
         cardsChosen.push(cardArray[cardId].name)

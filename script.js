@@ -67,6 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ]
 
     const gameBoard = document.querySelector('.game-board')
+    const resultDisplay = document.querySelector('#result')
     let cardsChosen = []
     let cardsChosenId = []
 
@@ -96,7 +97,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         cardsChosen = []
         cardsChosenId = []
-        resultDisplay
+        resultDisplay.textContent = cardsWon.length
+        if (cardsWon.length === cardArraylength/2) {
+            resultDisplay.textContent = 'Congratulations! you win!'
+        }
     }
 
     function flipCard() {

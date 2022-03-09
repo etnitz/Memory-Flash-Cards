@@ -67,13 +67,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ]
 
+    cardArr.sort( () => 0.5 - Math.random())
+
     const board = document.querySelector('.game-board')
     let cardsClicked = []
     let cardsClickedId = []
 
+    
 
-
-    const board = () => {
+    const newBoard = () => {
         cardArr.forEach( (i) => {
             let card = document.createElement('img')
             card.setAttribute('src', 'images/back.jpeg')
@@ -97,14 +99,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const flip = () => {
-        let cardId = this.getAttribute('card-id')
+        let cardId = event.currentTarget.getAttribute('card-id')
         cardsClicked.push(cardArr[cardId].name)
         cardsClickedId.push(cardId)
-        this.setAttribute('src', cardArr[cardId].img)
+        document.setAttribute('src', cardArr[cardId].img)
         if (cardsClicked.length === 2) {
             setTimeout(match, 500)
         }
     }
-
-    board()
+    newBoard()
 })

@@ -72,14 +72,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const board = document.querySelector('.game-board')
     let cardsClicked = []
     let cardsClickedId = []
-
+    let cardsMatched = []
     
 
     const newBoard = () => {
         cardArr.forEach( (i) => {
             let card = document.createElement('img')
             card.setAttribute('src', 'images/back.jpeg')
-            card.setAttribute('card-id', i)
+            card.setAttribute('data-id', i)
             card.addEventListener('click', flip)
             board.appendChild(card)
         })
@@ -92,17 +92,18 @@ document.addEventListener('DOMContentLoaded', () => {
         if (cardsClicked[0] === cardsClicked[1]) {
             cards[cardOne].setAttribute('src', 'images/white.jpeg')
             cards[cardTwo].setAttribute('src', 'images/white.jpeg')
+            cardsMatched.push(cardsClicked)
         } else {
             cards[cardOne].setAttribute('src', 'images/back.jpeg')
             cards[cardTwo].setAttribute('src', 'images/back.jpeg')
         }
     }
 
-    const flip = () => {
-        let cardId = event.currentTarget.getAttribute('card-id')
+    const flip = ()  => {
+        let cardId = event.currentTarget.getAttribute('data-id')
         cardsClicked.push(cardArr[cardId].name)
         cardsClickedId.push(cardId)
-        document.setAttribute('src', cardArr[cardId].img)
+        currentTarget.setAttribute('src', cardArr[cardId].img)
         if (cardsClicked.length === 2) {
             setTimeout(match, 500)
         }

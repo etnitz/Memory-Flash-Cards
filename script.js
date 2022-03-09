@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    
     const cardArr = [
         {
             name: 'bee',
@@ -65,4 +66,22 @@ document.addEventListener('DOMContentLoaded', () => {
             img: 'images/elephant.png'
         }
     ]
+
+    const board = document.querySelector('.game-board')
+
+
+
+    function newBoard() {
+        cardArr.forEach( (i) => {
+            let card = document.createElement('img')
+            card.setAttribute('src', 'images/back.jpeg')
+            card.setAttribute('card-id', i)
+
+            board.appendChild(card)
+        })
+    }
+
+    
+
+    newBoard()
 })

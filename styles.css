@@ -1,8 +1,12 @@
-
+body {
+    text-align: center;
+    background-color: pink;
+}
 
 .game-board {
     display:flex;
     flex-wrap: wrap;
+    margin: auto;
     height: 400px;
     width: 400px;
 }

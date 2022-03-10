@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cardArr.forEach( (i) => {
             let card = document.createElement('img')
             card.setAttribute('src', 'images/back.jpeg')
-            card.setAttribute('card-id', i.name)
+            card.setAttribute('card-id', i.img)
             card.addEventListener('click', flip)
             board.appendChild(card)
         })
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let cardId = event.currentTarget.getAttribute('card-id')
         cardsClicked.push(cardArr[cardId])
         cardsClickedId.push(cardId)
-        event.currentTarget.setAttribute('src', cardArr.img[cardId])
+        event.currentTarget.setAttribute('src', cardId)
         if (cardsClicked.length === 2) {
             setTimeout(match, 500)
         }

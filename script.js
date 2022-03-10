@@ -71,38 +71,43 @@ document.addEventListener('DOMContentLoaded', () => {
     
 
     const board = document.querySelector('.game-board')
-    let cardsClickedId = []
+    let cardsClicked = []
     let cardsMatched = []
     
     const newBoard = () => {
         cardArr.forEach( (i) => {
             let card = document.createElement('img')
             card.setAttribute('src', 'images/back.jpeg')
-            card.setAttribute('card-id', i.img)
+            card.setAttribute('id', i.img)
             card.addEventListener('click', flip)
             board.appendChild(card)
         })
     }
 
     const match = () => {
-        let cards = document.querySelector('img')
-        const cardOne = cardsClickedId[0]
-        const cardTwo = cardsClickedId[1]
-        if (cardsClickedId[0] === cardsClickedId[1]) {
-            cards[cardOne].setAttribute('src', 'images/check.png')
-            cards[cardTwo].setAttribute('src', 'images/check.png')
-            cardsMatched.push(cardsClickedId)
+        const cardOne = cardsClicked[0].id
+        const cardTwo = cardsClicked[1].id
+        
+        if (cardOne === cardTwo) {
+            cardsClicked[0].src = 'images/check.png'
+            cardsClicked[1].src = 'images/check.png'
+            cardsMatched.push(cardsClicked)
         } else {
-            cards[cardOne].setAttribute('src', 'images/back.jpeg')
-            cards[cardTwo].setAttribute('src', 'images/back.jpeg')
+            cardsClicked[0].src = 'images/back.jpeg'
+            cardsClicked[1].src = 'images/back.jpeg'
+        }
+        cardsClicked = []
+        console.log(cardsMatched)
+        if (cardsMatched.length === cardArr.length / 2) {
+            alert('You win!')
         }
     }
 
-    const flip = ()  => {
-        let cardId = event.currentTarget.getAttribute('card-id')
-        cardsClickedId.push(cardId)
-        event.currentTarget.setAttribute('src', cardId)
-        if (cardsClickedId.length === 2) {
+    const flip = (event)  => {
+        let clickedCard = event.currentTarget
+        cardsClicked.push(clickedCard)
+        clickedCard.setAttribute('src', clickedCard.id)
+        if (cardsClicked.length === 2) {
             setTimeout(match, 500)
         }
     }

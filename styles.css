@@ -1,6 +1,33 @@
+
+
 body {
     text-align: center;
     background-color: pink;
+    font-family: 'Butterfly Kids', cursive;
+    font-size: x-large;
+    color: crimson;
+}
+
+button {
+    background-color: aqua;
+    padding: 14px 40px;
+    border: 2px solid purple;
+    border-radius: 12px;
+}
+
+#easy:hover {
+    background-color: chartreuse;
+    transition-duration: 500ms;
+}
+
+#med:hover {
+    background-color: gold;
+    transition-duration: 500ms;
+}
+
+#hard:hover {
+    background-color: lightcoral;
+    transition-duration: 500ms;
 }
 
 .game-board {

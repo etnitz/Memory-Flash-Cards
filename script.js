@@ -90,8 +90,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const cardOne = cardsClicked[0]
         const cardTwo = cardsClicked[1]
         if (cardsClicked[0] === cardsClicked[1]) {
-            cards[cardOne].setAttribute('src', 'images/white.jpeg')
-            cards[cardTwo].setAttribute('src', 'images/white.jpeg')
+            cards[cardOne].setAttribute('src', 'images/check.png')
+            cards[cardTwo].setAttribute('src', 'images/check.png')
             cardsMatched.push(cardsClicked)
         } else {
             cards[cardOne].setAttribute('src', 'images/back.jpeg')

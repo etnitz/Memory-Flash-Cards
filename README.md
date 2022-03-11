@@ -19,7 +19,7 @@ Welcome to Memory flash cards! (title in work)
 
 ### ***Updates***
 
-I am going to add a restart and work on add a scoring system.
+I am going to add a restart and work on adding a scoring system.
 
  ***
 ### ***Credits***

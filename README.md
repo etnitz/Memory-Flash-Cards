@@ -18,7 +18,7 @@ the object of the game is to flip over a match.
 
  To see progress on the game, go to: https://trello.com/b/3OVUSKZu/snake-game
  ***
-### *** Tech Used***
+### ***Tech Used***
 Javascript
 HTML
 CSS

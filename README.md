@@ -8,6 +8,8 @@ https://memory-flashgame.surge.sh/
 ### ***Description***
 Welcome to Memory flash cards! (title in work)
 
+the object of the game is to flip over a match.
+
  This is my first attempt at a README. I am going to build a memory flash card browser game. I'm going to create the HTML, style with CSS, and code logic with JS. I am using trello.com to help organize me to make to build go easier. For more reference for the steps, go to: https://trello.com/b/3OVUSKZu/snake-game
 
  I created functions to "flip" the card and to check it they are a match.
@@ -16,6 +18,11 @@ Welcome to Memory flash cards! (title in work)
 
  To see progress on the game, go to: https://trello.com/b/3OVUSKZu/snake-game
  ***
+### *** Tech Used***
+Javascript
+HTML
+CSS
+
 
 ### ***Updates***
 

@@ -23,7 +23,7 @@ I am going to add a restart and work on adding a scoring system.
 
  ***
 ### ***Credits***
-#### **inspiration:** [Ania_Kubów](https://www.youtube.com/watch?v=tjyDOHzKN0w&t=514s)
+#### **Inspiration:** [Ania_Kubów](https://www.youtube.com/watch?v=tjyDOHzKN0w&t=514s)
 #### **Markdown Guide:** [ia.net](https://ia.net/writer/support/general/markdown-guide)
 #### **Markdown Cheatsheet:** [GitHub](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 #### **Coding Lessons:** [GeneralAssembly](https://generalassemb.ly/)

@@ -2,6 +2,9 @@
 ### By: Group1 - Ethan Nitz
 [GitHub](https://github.com/etnitz) [LinkedIn](https://www.linkedin.com/in/ethan-nitz-5822a112/)
 ***
+### ***Link to game***
+https://memory-flashgame.surge.sh/
+
 ### ***Description***
 Welcome to Memory flash cards! (title in work)
 

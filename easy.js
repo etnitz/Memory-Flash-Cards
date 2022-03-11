@@ -2,27 +2,21 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const cardArr = [
         {
-            name: 'bee',
-            img: 'images/bee.png'
+            img: 'images/fish.png'
         },
         {
-            name: 'bee',
-            img: 'images/bee.png'
+            img: 'images/fish.png'
         },
         {
-            name: 'bird',
-            img: 'images/bird.png'
+            img: 'images/frog.png'
         },
         {
-            name: 'bird',
-            img: 'images/bird.png'
+            img: 'images/frog.png'
         },
         {
-            name: 'cat',
             img: 'images/cat.png'
         },
         {
-            name: 'cat',
             img: 'images/cat.png'
         }
     ]

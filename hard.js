@@ -2,83 +2,63 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const cardArr = [
         {
-            name: 'gorilla',
             img: 'images/gorilla.png'
         },
         {
-            name: 'gorilla',
             img: 'images/gorilla.png'
         },
         {
-            name: 'kangaroo',
             img: 'images/kangaroo.png'
         },
         {
-            name: 'kangaroo',
             img: 'images/kangaroo.png'
         },
         {
-            name: 'ladybug',
             img: 'images/ladybug.png'
         },
         {
-            name: 'ladybug',
             img: 'images/ladybug.png'
         },
         {
-            name: 'lion',
             img: 'images/lion.png'
         },
         {
-            name: 'lion',
             img: 'images/lion.png'
         },
         {
-            name: 'octopus',
             img: 'images/octopus.png'
         },
         {
-            name: 'octopus',
             img: 'images/octopus.png'
         },
         {
-            name: 'panda',
             img: 'images/panda.png'
         },
         {
-            name: 'panda',
             img: 'images/panda.png'
         },
         {
-            name: 'pig',
             img: 'images/pig.png'
         },
         {
-            name: 'pig',
             img: 'images/pig.png'
         },
         {
-            name: 'rabbit',
             img: 'images/rabbit.png'
         },
         {
-            name: 'rabbit',
             img: 'images/rabbit.png'
         },
         {
-            name: 'sheep',
             img: 'images/sheep.png'
         },
         {
-            name: 'sheep',
             img: 'images/sheep.png'
         },
         {
-            name: 'turtle',
             img: 'images/turtle.png'
         },
         {
-            name: 'turtle',
             img: 'images/turtle.png'
         },
     ]
